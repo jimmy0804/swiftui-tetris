@@ -9,11 +9,18 @@
 /* Begin PBXBuildFile section */
 		B068D719238E0A7D006CE707 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B068D718238E0A7D006CE707 /* AppDelegate.swift */; };
 		B068D71B238E0A7D006CE707 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B068D71A238E0A7D006CE707 /* SceneDelegate.swift */; };
-		B068D71D238E0A7D006CE707 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B068D71C238E0A7D006CE707 /* ContentView.swift */; };
+		B068D71D238E0A7D006CE707 /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B068D71C238E0A7D006CE707 /* MainContentView.swift */; };
 		B068D71F238E0A7D006CE707 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B068D71E238E0A7D006CE707 /* Assets.xcassets */; };
 		B068D722238E0A7D006CE707 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B068D721238E0A7D006CE707 /* Preview Assets.xcassets */; };
 		B068D725238E0A7D006CE707 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B068D723238E0A7D006CE707 /* LaunchScreen.storyboard */; };
 		B068D730238E0A7D006CE707 /* swiftui_tertisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B068D72F238E0A7D006CE707 /* swiftui_tertisTests.swift */; };
+		B068D73C238E11BB006CE707 /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B068D73B238E11BB006CE707 /* Tile.swift */; };
+		B068D73E238E1221006CE707 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = B068D73D238E1221006CE707 /* Block.swift */; };
+		B068D742238E136C006CE707 /* GameStartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B068D741238E136C006CE707 /* GameStartView.swift */; };
+		B068D744238E1453006CE707 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B068D743238E1453006CE707 /* GameManager.swift */; };
+		B068D746238E1904006CE707 /* GameBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B068D745238E1904006CE707 /* GameBoardView.swift */; };
+		B068D749238E1952006CE707 /* GameBoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B068D748238E1952006CE707 /* GameBoardViewModel.swift */; };
+		B068D74B238E50B8006CE707 /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B068D74A238E50B8006CE707 /* TileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +37,7 @@
 		B068D715238E0A7D006CE707 /* swiftui-tertis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swiftui-tertis.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B068D718238E0A7D006CE707 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B068D71A238E0A7D006CE707 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B068D71C238E0A7D006CE707 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B068D71C238E0A7D006CE707 /* MainContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
 		B068D71E238E0A7D006CE707 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B068D721238E0A7D006CE707 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B068D724238E0A7D006CE707 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +45,13 @@
 		B068D72B238E0A7D006CE707 /* swiftui-tertisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swiftui-tertisTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B068D72F238E0A7D006CE707 /* swiftui_tertisTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swiftui_tertisTests.swift; sourceTree = "<group>"; };
 		B068D731238E0A7D006CE707 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B068D73B238E11BB006CE707 /* Tile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
+		B068D73D238E1221006CE707 /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
+		B068D741238E136C006CE707 /* GameStartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStartView.swift; sourceTree = "<group>"; };
+		B068D743238E1453006CE707 /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
+		B068D745238E1904006CE707 /* GameBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoardView.swift; sourceTree = "<group>"; };
+		B068D748238E1952006CE707 /* GameBoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoardViewModel.swift; sourceTree = "<group>"; };
+		B068D74A238E50B8006CE707 /* TileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +93,13 @@
 		B068D717238E0A7D006CE707 /* swiftui-tertis */ = {
 			isa = PBXGroup;
 			children = (
+				B068D747238E191F006CE707 /* Manager */,
+				B068D73A238E10B3006CE707 /* Models */,
+				B068D740238E1318006CE707 /* ViewModels */,
+				B068D73F238E12CC006CE707 /* Views */,
 				B068D718238E0A7D006CE707 /* AppDelegate.swift */,
 				B068D71A238E0A7D006CE707 /* SceneDelegate.swift */,
-				B068D71C238E0A7D006CE707 /* ContentView.swift */,
+				B068D71C238E0A7D006CE707 /* MainContentView.swift */,
 				B068D71E238E0A7D006CE707 /* Assets.xcassets */,
 				B068D723238E0A7D006CE707 /* LaunchScreen.storyboard */,
 				B068D726238E0A7D006CE707 /* Info.plist */,
@@ -105,6 +123,41 @@
 				B068D731238E0A7D006CE707 /* Info.plist */,
 			);
 			path = "swiftui-tertisTests";
+			sourceTree = "<group>";
+		};
+		B068D73A238E10B3006CE707 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B068D73B238E11BB006CE707 /* Tile.swift */,
+				B068D73D238E1221006CE707 /* Block.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B068D73F238E12CC006CE707 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B068D741238E136C006CE707 /* GameStartView.swift */,
+				B068D745238E1904006CE707 /* GameBoardView.swift */,
+				B068D74A238E50B8006CE707 /* TileView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B068D740238E1318006CE707 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B068D748238E1952006CE707 /* GameBoardViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B068D747238E191F006CE707 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				B068D743238E1453006CE707 /* GameManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,7 +263,14 @@
 			files = (
 				B068D719238E0A7D006CE707 /* AppDelegate.swift in Sources */,
 				B068D71B238E0A7D006CE707 /* SceneDelegate.swift in Sources */,
-				B068D71D238E0A7D006CE707 /* ContentView.swift in Sources */,
+				B068D73E238E1221006CE707 /* Block.swift in Sources */,
+				B068D746238E1904006CE707 /* GameBoardView.swift in Sources */,
+				B068D749238E1952006CE707 /* GameBoardViewModel.swift in Sources */,
+				B068D744238E1453006CE707 /* GameManager.swift in Sources */,
+				B068D71D238E0A7D006CE707 /* MainContentView.swift in Sources */,
+				B068D73C238E11BB006CE707 /* Tile.swift in Sources */,
+				B068D74B238E50B8006CE707 /* TileView.swift in Sources */,
+				B068D742238E136C006CE707 /* GameStartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
