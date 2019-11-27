@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  swiftui-tertis
 //
-//  Created by Yeung, Jimmy(AWF) on 27/11/2019.
+//  Created by Jimmy Yeung on 27/11/2019.
 //  Copyright © 2019 Jimmy Yeung. All rights reserved.
 //
 
