@@ -20,8 +20,14 @@ struct MainContentView: View {
         case .notStarted:
             return AnyView(GameStartView())
         case .started:
-            let viewModel = GameBoardViewModel(gameboardStyle: .standard)
-            let gameBoardView = GameBoardView(gameBoardViewModel: viewModel)
+            let config = GameBoardConfig.standard
+            let collisionDetector = CollisionDetector(gameBoardConfig: config)
+            let gameboardViewModel = GameBoardViewModel(
+                config: config,
+                gameBlockFactory: GameBlockFactory(gameBoardConfig: config),
+                collisionDetector: collisionDetector
+            )
+            let gameBoardView = GameBoardView(gameboardViewModel: gameboardViewModel)
                 .padding(20)
             return AnyView(gameBoardView)
         case .gameover:

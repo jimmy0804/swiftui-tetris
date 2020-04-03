@@ -2,7 +2,7 @@
 //  GameManager.swift
 //  swiftui-tertis
 //
-//  Created by Jimmy Yeung on 27/11/2019.
+//  Created by Jimmy Yeung on 1/12/2019.
 //  Copyright © 2019 Jimmy Yeung. All rights reserved.
 //
 
@@ -15,6 +15,7 @@ enum GameState {
 }
 
 class GameManager: ObservableObject {
+
     @Published var gameState: GameState = .notStarted
     
     func startGame() {
